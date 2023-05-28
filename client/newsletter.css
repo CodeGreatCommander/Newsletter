@@ -1,17 +1,56 @@
 body{
     position: relative;
-width: 1440px;
-height: 1024px;
+width: 1280px;
+height: 832px;
 
 background: #FFFFFF;
 }
 #form{
     position: absolute;
-width: 940px;
-height: 528px;
-left: calc(50% - 940px/2);
-top: 186px;
+width: 456px;
+height: 534px;
+left: calc(50% - 456px/2);
+top: calc(50% - 534px/2);
 
-background: #FE0606;
-border-radius: 64px;   
+background: #F74747;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 60px;   
+}
+#name{
+    position: absolute;
+width: 318px;
+height: 77px;
+left: calc(50% - 318px/2);
+top: 150px;
+text-align: center;
+font-size: 200%;
+background: #D9D9D9;
+border-radius: 41px;
+}
+#email{
+    position: absolute;
+width: 318px;
+height: 77px;
+text-align: center;
+font-size: 200%;
+left: calc(50% - 318px/2);
+top: 255px;
+
+background: #D9D9D9;
+border-radius: 41px;
+}
+#button{
+    position: absolute;
+width: 179px;
+height: 55px;
+text-align: center;
+font-size: 150%;
+left: calc(50% - 179px/2 + 0.5px);
+top: 361px;
+
+background: #EDA5A5;
+border-radius: 41px;
+}
+#button:hover{
+    background: #da8383;
 }
