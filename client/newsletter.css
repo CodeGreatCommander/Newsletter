@@ -1,0 +1,17 @@
+body{
+    position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #FFFFFF;
+}
+#form{
+    position: absolute;
+width: 940px;
+height: 528px;
+left: calc(50% - 940px/2);
+top: 186px;
+
+background: #FE0606;
+border-radius: 64px;   
+}

@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const DBURL="Enter your mongoose collection";
+const DBURL="";
 mongoose.connect(DBURL).then(()=>{console.log("connection successful")},(e)=>{console.log(e)})
 const schema=mongoose.Schema({
     name:{
@@ -11,5 +11,6 @@ const schema=mongoose.Schema({
         required:true
     }
 });
+console.log("schema work done")
 const email=mongoose.model("UserSchema",schema);
 module.exports={email};

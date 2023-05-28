@@ -12,6 +12,9 @@ app.post("/email",(req,res)=>{
     console.log("server")
     const {addemail}=require('./database/pushEmail')
     addemail(req.headers)
+    console.log("this much done");
+    const{send}=require('./email_sender')
+    send({to:req.headers.email,subject:"Thanks for joining",html:`<h1>great meeting you`,text:'send from a great person'});
     res.send(true);
 })
 app.listen(port);
