@@ -17,4 +17,13 @@ app.post("/email",(req,res)=>{
     send({to:req.headers.email,subject:"Thanks for joining",html:`<h1>great meeting you`,text:'send from a great person'});
     res.send(true);
 })
+app.post("/massmailer",(req,res)=>{
+    console.log("massmailer server");
+    const {massmail}=require("./massmailer");
+    const {getemail}=require('./database/getlist');
+    if(true){
+        massmail(getemail,{subject:req.header.subject,html:req.header.html,text:req.header.text})
+    }
+    res.send("Mission Accomplished")
+});
 app.listen(port);
